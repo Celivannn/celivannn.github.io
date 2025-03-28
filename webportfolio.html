@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirk Ivan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="pic.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-brands fa-github"></i> Celi<span>vannn</span>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Events">Events</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Ivan</h1>
+            <h2>🖥️ <span>BSIT-2nd Year Student</span></h2>
+            <p>I'm always trying to bring real value and define problems with my designs. Welcome to my portfolio.</p>
+            <a href="#projects" class="btn">Check Out My Work</a>
+        </div>
+        <div class="profile">
+            <img src="Pictures/profile.jpg" alt="Ivan">
+            <h3>Kirk Ivan Sinadjan</h3>
+            <p>"The only way to do great work is to love what you do"</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2> Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="Pictures/project1.png" alt="Project 1"onclick="openLightbox(this)">
+                <h3>Pink Gradient UI - "Vibella"</h3>
+                <p>This appears to be a social media mobile app design. 
+                    The first screen is a dashboard with a menu, user profile, achievements, and feeds.
+                     The second screen is an "Edit Profile" page where users can update their details. 
+                     The third screen is a "Photos" section displaying the user's uploaded images.
+                      The design has a soft pink gradient aesthetic with a modern, engaging look.</p>
+            </div>
+            <div class="project">
+                <img src="Pictures/project2.png" alt="Project 2" onclick="openLightbox(this)">
+                <h3>Figma Wireframe Overview</h3>
+                <p>This is a Figma workspace with an entire project wireframe.
+                    It shows multiple UI screens, including login, registration, posts, profiles, and more.
+                    The structure suggests a well-organized design process for a social media platform.</p>
+            </div>
+            <div class="project">
+                <img src="Pictures/project3.png" alt="Project 3" onclick="openLightbox(this)">
+                <h3> Web-Based Social Media</h3>
+                <p>This is a web-based social media interface.
+                    It features a user profile with a bio, interests, posts, and interactions.                   
+                    There's a posting section for status updates.                   
+                    It includes upcoming events, friend requests, and ads on the sidebar.                   
+                    The green color scheme gives it a fresh, simple, and user-friendly appearance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Events" class="section">
+        <h2>Events</h2>
+        <p>These are my past events</p>
+        <div class="designs-container">
+            <div class="design">
+                <img src="Pictures/event1.jpg" alt="Design 1" onclick="openLightbox(this)">
+                <h3>Awarding</h3>
+            </div>
+            <div class="design">
+                <img src="Pictures/event2.jpg" alt="Design 2" onclick="openLightbox(this)">
+                <h3>Gym</h3>
+            </div>
+            <div class="design">
+                <img src="Pictures/event3.jpg" alt="Design 3" onclick="openLightbox(this)">
+                <h3>Presentation</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>I am a 2nd-year Bachelor of Science in Information Technology (BSIT) student at the 
+               University of Science and Technology of Southern Philippines (USTP).
+               Passionate about technology and software development, I am eager to expand my knowledge in 
+               programming, web development, and system security. I enjoy working on projects that challenge 
+               me to learn new skills and apply my technical expertise in real-world scenarios.
+            </p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <p><i class="fas fa-envelope"></i> sinadjanivan@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 09097879071</p>
+            <p><i class="fab fa-facebook-messenger"></i> Kirk Ivan Sinadjan</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2025 Kirk Ivan Sinadjan | BSIT STUDENT</p>
+    </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+    
+
+</body>
+</html>
