@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -10,11 +10,9 @@ body {
 }
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Adjust based on navbar height */
+    scroll-padding-top: 80px;
 }
 
-
-/* Header Styles - Fixed at the Top */
 header {
     position: fixed;
     top: 0;
@@ -41,8 +39,8 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 60px; /* Reduce gap to shift items left */
-    padding-right: 50px; /* Moves items to the left */
+    gap: 60px; 
+    padding-right: 50px; 
 }
 
 
@@ -50,7 +48,7 @@ nav ul li {
     display: inline;
 }
 nav {
-    max-width: 95%; /* Prevents navbar from being too wide */
+    max-width: 95%; 
 }
 
 nav ul li a {
@@ -63,7 +61,7 @@ nav ul li a:hover {
     color: #0099ff;
 }
 
-/* Hero Section - Adds Padding to Prevent Content Overlap */
+
 .hero {
     display: flex;
     align-items: center;
@@ -105,7 +103,7 @@ nav ul li a:hover {
     background: #0099ff;
 }
 
-/* Profile Section */
+
 .profile {
     max-width: 300px;
     text-align: center;
@@ -130,15 +128,15 @@ nav ul li a:hover {
 
 }
 
-/* Ensure All Project & Design Images Have Same Fixed Size */
+
 .project img, .design img {
-    width: 220px;  /* Fixed width */
-    height: 180px; /* Fixed height */
-    object-fit: cover; /* Ensures images fill the space while maintaining aspect ratio */
+    width: 220px;  
+    height: 180px; 
+    object-fit: cover; 
     border-radius: 5px;
 }
 
-/* Projects & Designs Container */
+
 .projects-container, .designs-container {
     display: flex;
     justify-content: center;
@@ -146,16 +144,16 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-/* Individual Project & Design Styling */
+
 .project, .design {
     background: #1a1a1a;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    width: 250px; /* Set a fixed width */
+    width: 250px; 
 }
 
-/* Justify Text Inside Project & Design */
+
 .project p, .design p {
     text-align: justify;
 }
@@ -171,21 +169,21 @@ nav ul li a:hover {
     color: #0099ff;
 }
 
-/* Add a Container for About Me & Contact */
+
 .about-container, .contact-container {
-    background: #1a1a1a; /* Dark background for contrast */
+    background: #1a1a1a; 
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    max-width: 800px; /* Set max width for better readability */
-    margin: 0 auto; /* Center the container */
+    border-radius: 10px; 
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
-/* Justify Text */
+
 .about-container p, .contact-container p {
     text-align: justify;
 }
 
-/* Icons & Contact Info Styling */
+
 .contact-container i {
     color: #0099ff;
     margin-right: 10px;
@@ -197,7 +195,7 @@ nav ul li a:hover {
     gap: 10px;
 }
 
-/* Footer Styles */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -230,7 +228,6 @@ footer p {
     color: #0099ff;
 }
 
-/* Lightbox Styles */
 .lightbox {
     display: none;
     position: fixed;
@@ -245,9 +242,31 @@ footer p {
 }
 
 .lightbox img {
-    max-width: 90%;  /* Make sure the image is not too wide */
-    max-height: 90vh; /* Make sure the image fits inside the screen */
+    max-width: 90%;  
+    max-height: 90vh; 
     border-radius: 10px;
-    object-fit: contain; /* Ensures the whole image is visible */
+    object-fit: contain; /
 }
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.about-images img {
+    width: 150px; /* Set the same width */
+    height: 150px; /* Set the same height */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
